@@ -35,26 +35,23 @@
     </script>
   </head>
   <body>
-    <header style="display: flex; justify-content: center">
-      <div class="flex-auto flex mt-10">
+    <header class="flex flex-auto w-full mt-8 justify-center">
+      <div class="flex-auto flex">
         <a class="btn btn-ghost normal-case font-bold text-xl lg:text-4xl"
           >P-Ticket</a
         >
       </div>
-      <!-- class="flex-auto h-6" -->
-
-      <div class="flex flex-auto navbar-center lg:flex mb-12 ml-64 mt-10">
-        <ul class="menu text-2xl menu-horizontal ml-56 m">
+      <div class="flex flex-auto navbar-center lg:flex mb-12">
+        <ul class="menu menu-horizontal justify-center text-2xl font-semibold">
           <li><a>Home</a></li>
           <li><a>About</a></li>
           <li><a>Destination</a></li>
           <li><a>Search</a></li>
         </ul>
       </div>
-      <div class="flex flex-auto mt-10">
-        <div class="justify-items-center ml-96">
-          <img class="ml-36" src="images/Frame 2.png" alt="" />
-        </div>
+
+      <div class="flex flex-auto">
+        <div class="mr-2"><img src="images/Frame 2.png" alt="" /></div>
       </div>
     </header>
 
@@ -112,13 +109,336 @@
             See All Offer
           </button>
         </div>
-        <div>
-          <img
-            class="bg-slate-200 rounded-lg"
-            src="images/Group 50.png"
-            alt=""
-          />
+        <div
+          class="bg-slate-300 border-[2-px] rounded-lg w-full h-full flex flex-col justify-between"
+        >
+          <div class="">
+            <h2 class="text-2xl font-serif font-bold text-center mt-9 mb-9">
+              P.H Paribahan
+            </h2>
+            <p class="font-normal text-center mb-8">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined
+            </p>
+            <div class="flex justify-between mx-24">
+              <div>
+                <img src="images/bus-logo.png" alt="" />
+                <div>
+                  <h2 class="text-2xl font-bold">Programming Paribahan</h2>
+                  <p>cash on delivery</p>
+                </div>
+              </div>
+              <!-- <div>...//8 seat left</div> -->
+              <p id="number_of_seats">0 seat</p>
+            </div>
+          </div>
+          <div>
+            <img src="images/Group 49.png" alt="" />
+          </div>
         </div>
+      </section>
+      <!-- SEAT SELECTION -->
+      <section class="flex flex-auto justify-evenly">
+        <section>
+          <p class="text-2xl font-semibold">Select Your Seat</p>
+          <div class="grid grid-rows-10 grid-cols-4 gap-4" style="width: 500px">
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              A1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              A2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              A3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              A4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              B1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              B2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              B3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              B4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              C1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              C2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              C3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              C4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              D1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              D2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              D3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              D4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              E1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              E2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              E3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              E4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              F1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              F2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              F3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              F4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              G1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              G2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              G3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              G4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              H1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              H2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              H3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              H4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              I1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              I2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              I3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              I4
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              J1
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              J2
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              J3
+            </div>
+            <div
+              class="btn bg-slate-200 hover:bg-green-400 text-black"
+              id="seat"
+            >
+              J4
+            </div>
+          </div>
+        </section>
+
+        <!-- SEAT SELECTION -->
+        <section class="grid">
+          <div>
+            <section class="mb-8 text-center">
+              <p class="text-2xl font-semibold">Select Your Seat</p>
+            </section>
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Seat</th>
+                    <th>Class</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody id="seat_list">
+                  <!-- row 1 -->
+                </tbody>
+              </table>
+              <div>Total Price : <span id="total_price">0</span></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <span class="text-1xl font-bold">Passanger name</span>
+            <input
+              type="text"
+              placeholder="Type here"
+              class="input input-bordered input-primary w-full max-w-xs"
+            />
+          </div>
+          <div class="mb-16">
+            <span class="text-1xl font-bold">Phone Number</span>
+            <input
+              type="text"
+              placeholder="Type here"
+              class="input input-bordered input-primary w-full max-w-xs"
+            />
+          </div>
+
+          <div>
+            <span class="text-1xl font-bold">Enter Your Email</span>
+            <input
+              type="text"
+              placeholder="Type here"
+              class="input input-bordered input-primary w-full max-w-xs"
+            />
+          </div>
+          <div>
+            <button class="btn no-animation bg-green-500 w-full max-w-xs">
+              Next
+            </button>
+          </div>
+        </section>
       </section>
     </section>
 
@@ -142,7 +462,8 @@
       </div>
     </footer>
   </body>
-  <!-- tailwind -->
+
+  <script src="./js/app.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- font awesome -->
   <script
