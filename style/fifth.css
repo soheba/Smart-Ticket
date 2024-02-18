@@ -1,0 +1,55 @@
+.bannar {
+  margin-left: 150px;
+  margin-bottom: 180px;
+  height: 600px;
+  width: 1320px;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 16px;
+  c
+}
+.banner-gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (width <= 600px) {
+  .banner-gradient {
+    display: grid;
+  }
+}
+
+.explore {
+  color: #fff;
+
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.explore1 {
+  color: #2cc035;
+
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.travel_text {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
