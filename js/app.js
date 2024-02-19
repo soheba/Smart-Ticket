@@ -51,12 +51,12 @@ for (let i = 0; i < seatsArr.length; i++) {
 
 numberOfSeatsContainer.innerText = numberOfSeats + " seats";
 
-takeSeatBtn.addEventListener("click", () => {
-  numberOfSeats--;
-  totalSeats++;
-  numberOfSeatsContainer.innerText = numberOfSeats + " seats";
-  console.log(numberOfSeats);
-});
+// takeSeatBtn.addEventListener("click", () => {
+//   numberOfSeats--;
+//   totalSeats++;
+//   numberOfSeatsContainer.innerText = numberOfSeats + " seats";
+//   console.log(numberOfSeats);
+// });
 
 //functions
 
@@ -65,22 +65,20 @@ function calculateTotal(totalNumberSeats, ticketprice) {
 }
 //valid invalid check in next buton
 //let pasNAme.value == "" || phon === "" || email == "" ==> invalid
+let nextButton = document.getElementById("next_button");
+nextButton.addEventListener("click", () => {
+  let passengerName = document.getElementById("passengerName");
+  let phoneNumber = document.getElementById("phoneNumber");
+  let email = document.getElementById("email");
+  let myModal3 = document.getElementById("my_modal_3");
 
-document.getElementById("nextButton").addEventListener("click", function () {
-  const passengerName = document.getElementById("passengerName").value.trim();
-  const phoneNumber = document.getElementById("phoneNumber").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const modal = document.getElementById("my_modal_3");
-
-  if (passengerName !== "" && phoneNumber !== "" && email !== "") {
-    console.log("Next step performed");
-    // Open modal if all fields are filled
-    if (typeof modal.showModal === "function") {
-      modal.showModal();
-    } else {
-      console.log("Modal dialog not supported by the browser.");
-    }
-  } else {
-    console.log("Please fill in all fields.");
+  if (
+    email.value !== "" &&
+    passengerName.value !== "" &&
+    phoneNumber.value !== ""
+  ) {
+    console.log("show modal");
+    console.log(myModal3);
+    myModal3.showModal();
   }
 });
