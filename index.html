@@ -35,13 +35,14 @@
     </script>
   </head>
   <body>
-    <header class="flex flex-auto w-full mt-8 justify-center">
-      <div class="flex-auto flex">
+    <header class="flex w-full mt-8 justify-between">
+      <div class="flex">
         <a class="btn btn-ghost normal-case font-bold text-xl lg:text-4xl"
           >P-Ticket</a
         >
       </div>
-      <div class="flex flex-auto navbar-center lg:flex mb-12">
+
+      <div class="flex navbar-center lg:flex mb-12">
         <ul class="menu menu-horizontal justify-center text-2xl font-semibold">
           <li><a>Home</a></li>
           <li><a>About</a></li>
@@ -50,7 +51,7 @@
         </ul>
       </div>
 
-      <div class="flex flex-auto">
+      <div class="flex">
         <div class="mr-2"><img src="images/Frame 2.png" alt="" /></div>
       </div>
     </header>
@@ -80,13 +81,28 @@
           Yes, you can run unit tests and view the results directly within the
           app. The integrated testing features allow for a streamlined .
         </p>
-        <div class="mt-10">
+        <div class="mt-10 mb-20">
           <button
-            class="btn btn-success text-2xl font-bold mt-32"
+            class="btn btn-success text-2xl font-bold mt-32 bg-green-600"
             style="color: white"
           >
             Buy Ticket
           </button>
+        </div>
+
+        <div class="flex gap-36 -mb-80">
+          <div>
+            <!-- 1st imag -->
+            <img class="w-full" src="images/Group 11.png" alt="" />
+          </div>
+          <div>
+            <!-- 2nd iage -->
+            <img src="images/Group 12.png" alt="" />
+          </div>
+          <div>
+            <!-- 3 rd image  -->
+            <img src="images/Group 13.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -97,45 +113,145 @@
       </h2>
       <div class="flex flex-auto justify-evenly">
         <img class="" src="images/Group 113.png" alt="" />
-        <img class="" src="images/Group 113.png" alt="" />
+        <div style="position: relative">
+          <img class="" src="images/Rectangle 8 (2).png" alt="" />
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+              padding: 10px;
+            "
+            class="flex flex-auto gap-48"
+          >
+            <div>
+              <span class="text-3xl font-bold">20% OFF</span>
+              <br />
+              <span>On your next purchase</span>
+              <br />
+              <span>use by January 2024</span>
+            </div>
+            <div class="divider divider-horizontal">..</div>
+            <div>
+              <span>Couple 20</span>
+              <p>coupon code</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- ///pari na -->
       <section class="mt-10 mb-10" style="display: grid; place-items: center">
         <div>
           <button
-            class="btn btn-outline btn-success text-2xl font-bold mt-32 mb-24"
+            class="btn btn-outline btn-success text-2xl font-bold mt-28 mb-24"
           >
             See All Offer
           </button>
         </div>
-        <div
-          class="bg-slate-300 border-[2-px] rounded-lg w-full h-full flex flex-col justify-between"
-        >
-          <div class="">
-            <h2 class="text-2xl font-serif font-bold text-center mt-9 mb-9">
+        <section>
+          <div>
+            <h2 class="text-5xl font-serif font-bold text-center mt-9 mb-9">
               P.H Paribahan
             </h2>
             <p class="font-normal text-center mb-8">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined
             </p>
-            <div class="flex justify-between mx-24">
-              <div>
-                <img src="images/bus-logo.png" alt="" />
+          </div>
+        </section>
+        <section
+          class="flex justify-evenly bg-slate-300 border-[2-px] rounded-lg w-full h-full"
+        >
+          <div class="flex flex-col justify-evenly">
+            <div>
+              <div class="flex gap-16 mt-36 mb-44 mx-24 justify-evenly">
                 <div>
-                  <h2 class="text-2xl font-bold">Programming Paribahan</h2>
-                  <p>cash on delivery</p>
+                  <img src="images/bus-logo.png" alt="" />
+                  <div>
+                    <h2 class="text-3xl font-bold">Programming Paribahan</h2>
+                    <p class="text-2xl">cash on delivery</p>
+                  </div>
+                </div>
+                <!-- <div>...//8 seat left</div> -->
+                <button class="btn btn-success" id="number_of_seats">
+                  0 seat
+                </button>
+              </div>
+              <div class="flex justify-around mb-40">
+                <!-- <div>
+                  <p>Route</p>
+                </div>
+
+                <div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn m-1">Click</div>
+                    <ul
+                      tabindex="0"
+                      class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                    >
+                      <li><a>Dhaka-Shylht</a></li>
+                      <li><a>Dhaka-cumilla</a></li>
+                    </ul>
+                  </div>
+                </div> -->
+                <div class="w-auto h-auto text-3xl">
+                  <table class="table">
+                    <!-- head -->
+                    <thead>
+                      <tr>
+                        <th>Route</th>
+
+                        <th>Departure Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cy Ganderton</td>
+
+                        <td>
+                          <div>
+                            <div class="dropdown">
+                              <div tabindex="0" role="button" class="btn m-1">
+                                Click
+                              </div>
+                              <ul
+                                tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                              >
+                                <li><a>Dhaka-Shylht</a></li>
+                                <li><a>Dhaka-cumilla</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Hart Hagerty</td>
+
+                        <td>
+                          <div>
+                            <p>9 p.m</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                    <img src="images/Group 41.png" alt="" />
+                  </div>
                 </div>
               </div>
-              <!-- <div>...//8 seat left</div> -->
-              <p id="number_of_seats">0 seat</p>
             </div>
           </div>
-          <div>
+          <div class="divider divider-horizontal"></div>
+          <div class="mt-80">
             <img src="images/Group 49.png" alt="" />
           </div>
-        </div>
+        </section>
       </section>
       <!-- SEAT SELECTION -->
       <section class="flex flex-auto justify-evenly">
@@ -411,14 +527,16 @@
           <div class="mb-4">
             <span class="text-1xl font-bold">Passanger name</span>
             <input
+              id="passengerName"
               type="text"
               placeholder="Type here"
               class="input input-bordered input-primary w-full max-w-xs"
             />
           </div>
-          <div class="mb-16">
+          <div class="mb-2">
             <span class="text-1xl font-bold">Phone Number</span>
             <input
+              id="phoneNumber"
               type="text"
               placeholder="Type here"
               class="input input-bordered input-primary w-full max-w-xs"
@@ -428,16 +546,38 @@
           <div>
             <span class="text-1xl font-bold">Enter Your Email</span>
             <input
+              id="email"
               type="text"
               placeholder="Type here"
               class="input input-bordered input-primary w-full max-w-xs"
             />
           </div>
           <div>
-            <button class="btn no-animation bg-green-500 w-full max-w-xs">
+            <button
+              class="btn no-animation bg-green-500 w-full max-w-xs"
+              onclick="my_modal_3.showModal()"
+            >
               Next
             </button>
+
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box">
+                <form method="dialog">
+                  <button
+                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                  >
+                    ✕
+                  </button>
+                </form>
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Successfully added your Information</p>
+              </div>
+            </dialog>
           </div>
+          <section class="flex gap-12">
+            <p>Terms and Conditions</p>
+            <p>Cancelletion Policy</p>
+          </section>
         </section>
       </section>
     </section>
